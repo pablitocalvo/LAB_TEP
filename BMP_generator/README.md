@@ -26,6 +26,8 @@ per l'uso dei file :
 compilare e lanciare il sorgente filebinari.cpp 
 capirne il senso ...
 
+Link utili:
+
 http://www.cplusplus.com/doc/tutorial/files/
 
 
