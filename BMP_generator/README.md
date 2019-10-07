@@ -23,5 +23,9 @@ https://it.wikipedia.org/wiki/Windows_bitmap
 
 per l'uso dei file :
 
-.......
+compilare e lanciare il sorgente filebinari.cpp 
+capirne il senso ...
+
+http://www.cplusplus.com/doc/tutorial/files/
+
 
