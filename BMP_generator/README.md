@@ -39,5 +39,8 @@ aprirle con l'editor esadecimale ...
 cosa cambia ?
 La mappa dei pixel ....
 
+compiolazione con 
+g++ -Wall -std=c++11  -Wno-narrowing -o "%e" "%f" 
+
 
 
