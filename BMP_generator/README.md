@@ -34,3 +34,8 @@ ldconfig /usr/local/lib
 
 Windows:
 TO DO:
+
+ISTRUZIONI PER COMPILARE IL PROGRAMMA:
+
+usare come comandi per la compilazione:
+g++ -Wall -std=c++11 `Magick++-config --cppflags --cxxflags --ldflags --libs` -o "%e" "%f" 
