@@ -1,55 +1,26 @@
+#include <Magick++.h> 
+#include <iostream> 
+using namespace std; 
+using namespace Magick; 
+int main(int argc,char **argv) 
+{ 
+  InitializeMagick(*argv);
+  
+  Image immagine("64x64", "white");
+  immagine.depth(1);
 
-#include <iostream>
-#include <fstream>
-using namespace std;
-
-
-int main()
-{
-	
-	// usa una variabnile che rappresenta il file ...
-	ofstream mio_file("output.bmp" );
-
-  if (mio_file.is_open())
+  
+  for (int r=0; r<32; r++)
   {
-	// header copiato byte per byte da un immagine di 64x64 pixel monocromatica.
-	
-	
-     char header [] = {0x42, 0x4D, 0x3E, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3E, 0x00, 0x00, 0x00, 0x28, 0x00, 
-                      0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 
-                      0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-                      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0x00 };
-
-    mio_file.write(  header , sizeof(header) );
-        
-    cout << "ho scritto l'header sul file output.bmp"<<endl;
-    
-
-
-	// 1 pixel monocromatico = 1 Bit
-	// 64 pixel =64 Bit = ( 64/8 ) Byte = 8 Byte 
-	char riga_bianca [] ={	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 
-						  };
-	char riga_nera [] ={	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-						};
-
-
-	for (int i=1 ; i<=32;i++)
-		mio_file.write( riga_bianca , sizeof(riga_bianca) );
-	
-	for (int i=1 ; i<=32;i++)
-		mio_file.write( riga_nera , sizeof(riga_nera) );
-    
-    cout << "ho aggiunto la mappa dei pixel al file output.bmp "<<endl;
-  
- 
-  
-
+	  //colora la riga t-esima  di nero
+		for (int c=0; c<64; c++)
+		{	
+			immagine.pixelColor(c,r,Color("black"));
+			
+		}
   }
-  else 
-	{ 	cout << "Unable to open file";
-		return 1;
-	}
-		
-  return 0;
+  ;
+  
+  immagine.magick("bmp");
+  immagine.write("output");
 }

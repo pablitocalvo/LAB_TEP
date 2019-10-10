@@ -15,29 +15,27 @@ le rimanenti bianche ......
 
 
 
-link utili :
-per il formato BMP:
+SOLUZIONE:
+uso della libreria magick++ https://imagemagick.org/Magick++/
+che permette di risolvere il problema senza tanto struggersi con lo studio dei formati...
+(se tanto bisogna far contento il prof o il boss o la committenza..)
 
-https://it.wikipedia.org/wiki/Windows_bitmap
-
-
-per l'uso dei file :
-
-compilare e lanciare il sorgente filebinari.cpp 
-capirne il senso ...
-
-Link utili:
-
-http://www.cplusplus.com/doc/tutorial/files/
-
-Suggerimento :
-Affrintare l'esercizio senza peccare di eccessiva astrazione, ripeto il compito prevede la generazione di immagini 64x64 pixel !! non generiche w x h ( se hai difficoltà con numeri fissi pensi di cavartela con numeri variabili?)
-
-suggerimento :
-creare con paint due immagini 64x64 pixel salvarle nel formato BMP monocromatico, la prima tutta bianca la seconda tutta nera.
-aprirle con l'editor esadecimale ...
-cosa cambia ?
-La mappa dei pixel ....
+vedere il sorgente soluzione.cpp
 
 
+Installazione delle librerie:
+sotto linux:
+ - debian non sembra funzionante apt .... 
+  seguire qui :https://imagemagick.org/Magick++/Install.html
+  ms in più lanciare il comando 
 
+ldconfig /usr/local/lib
+
+
+Windows:
+TO DO:
+
+ISTRUZIONI PER COMPILARE IL PROGRAMMA:
+
+usare come comandi per la compilazione:
+g++ -Wall -std=c++11 `Magick++-config --cppflags --cxxflags --ldflags --libs` -o "%e" "%f" 
