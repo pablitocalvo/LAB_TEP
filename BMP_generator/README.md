@@ -39,6 +39,10 @@ aprirle con l'editor esadecimale ...
 cosa cambia ?
 La mappa dei pixel ....
 
+
+qui il link del dump ...
+https://github.com/pablitocalvo/LAB_TEP/blob/master/BMP_generator/md/dump_black_vs_white.png
+
 compiolazione con 
 g++ -Wall -std=c++11  -Wno-narrowing -o "%e" "%f" 
 
