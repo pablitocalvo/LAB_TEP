@@ -20,3 +20,17 @@ https://mahdytech.com/2019/01/05/task-manager-memory-info/
 https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 
 
+
+#### lezione venerdi 08 novembre
+
+Leggere attentamente i due programmi e prima di mandarl in esecuzione 
+indovinare cosa stampano ..
+
+[i_piupiu.cpp](i_piupiu.cpp)
+
+[piupiu_i.cpp](piupiu_i.cpp)
+
+
+
+
+
