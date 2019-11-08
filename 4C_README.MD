@@ -26,9 +26,9 @@ https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 Leggere attentamente i due programmi e prima di mandarl in esecuzione 
 indovinare cosa stampano ..
 
-[i_piupiu.cpp](i_piupiu.cpp)
+[i_piupiu.cpp](leggibilita/i_piupiu.cpp)
 
-[piupiu_i.cpp](piupiu_i.cpp)
+[piupiu_i.cpp](leggibilita/piupiu_i.cpp)
 
 
 
