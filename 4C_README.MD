@@ -21,9 +21,9 @@ https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 
 
 
-#### lezione venerdi 08 novembre
+#### lezione venerdi 08 novembre ripetizione 12 novebre
 
-Leggere attentamente i due programmi e prima di mandarl in esecuzione 
+Leggere attentamente i due programmi e prima di mandarli in esecuzione 
 indovinare cosa stampano ..
 
 [i_piupiu.cpp](leggibilita/i_piupiu.cpp)
