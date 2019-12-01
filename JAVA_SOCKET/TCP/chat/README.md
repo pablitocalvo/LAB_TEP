@@ -47,4 +47,4 @@ FASE 2)
 prevedere l'invio dei messaggi da parte di un utente ad un altro mediante l'invio della stringa:
 
 
-
+https://stackoverflow.com/questions/3605476/sharing-an-object-between-two-threads-and-main-program
